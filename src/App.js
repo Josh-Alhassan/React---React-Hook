@@ -5,10 +5,10 @@ import "./style.css";
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <h1>Create Card Component!</h1>
+      <p>Start coding to see some magic happen :)</p>
 
-      <Card />
+      <Card name="Joshua Abel"/>
       <Card />
       <Card />
     </div>
