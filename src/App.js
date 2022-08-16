@@ -1,5 +1,6 @@
 import React from "react";
-import Card from './Card'
+import Card from './Card';
+import faker from 'faker';
 import "./style.css";
 
 export default function App() {
@@ -8,7 +9,10 @@ export default function App() {
       <h1>Create Card Component!</h1>
       <p>Start coding to see some magic happen :)</p>
 
-      <Card name="Joshua Abel"/>
+      <Card 
+        avater={faker.image.avater()}
+        name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+        title={faker.name.jobTitle()} />
       <Card />
       <Card />
     </div>
