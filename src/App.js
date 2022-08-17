@@ -1,6 +1,7 @@
 import React from "react";
 import Card from './Card';
-import faker from 'faker';
+import { faker } from '@faker-js/faker';
+import { faker } from '@faker-js/faker/locale/de';
 import "./style.css";
 
 export default function App() {
@@ -10,11 +11,18 @@ export default function App() {
       <p>Start coding to see some magic happen :)</p>
 
       <Card 
-        avater={faker.image.avater()}
+        avater={faker.image.avatar()}
         name={`${faker.name.firstName()} ${faker.name.lastName()}`}
         title={faker.name.jobTitle()} />
-      <Card />
-      <Card />
+      <Card 
+        avater={faker.image.avatar()}
+        name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+        title={faker.name.jobTitle()} />
+      
+      <Card 
+        avater={faker.image.avatar()}
+        name={`${faker.name.firstName()} ${faker.name.lastName()}`}
+        title={faker.name.jobTitle()} />
     </div>
   );
 }
